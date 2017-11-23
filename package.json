@@ -1,12 +1,11 @@
 {
   "name": "@digilar/dotenv-url",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Loads environment variables from a url. e.g. http://somehost.com/env/dev.env",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "private": true,
   "repository": "https://github.com/digilar/dotenv-url",
   "keywords": [
     "dotenv",
@@ -22,7 +21,7 @@
   "contributors": [
     "Johannes Millegard <johannes@digilar.se>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.0.1"
