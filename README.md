@@ -39,13 +39,13 @@ Use the options object to configure dotenv-url to load environment variables fro
 ### Load from file
 
 ```javascript
-require('dotenv-url').config({path: 'some-directory/digilar.env', encoding: 'utf8'})
+require('dotenv-url').config({path: 'some-directory/.env', encoding: 'utf8'})
 ```
 
 ### Load from URL
 
 ```javascript
-require('dotenv-url').config({path: 'https://s3-eu-central-1.amazonaws.com/digilar-properties/test/test.env', encoding: 'utf8'})
+require('dotenv-url').config({path: 'https://example.com/test/test.env', encoding: 'utf8'})
 ```
 
 
