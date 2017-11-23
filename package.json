@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
+  "private": false,
   "repository": "https://github.com/digilar/dotenv-url",
   "keywords": [
     "dotenv",
