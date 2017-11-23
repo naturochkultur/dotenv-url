@@ -1,6 +1,6 @@
 {
-  "name": "dotenv-url",
-  "version": "1.0.0",
+  "name": "@digilar/dotenv-url",
+  "version": "0.1.0",
   "description": "Loads environment variables from a url. e.g. http://somehost.com/env/dev.env",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,9 @@
   ],
   "readmeFilename": "README.md",
   "author": "Peter Björklund <peter@bjorklundlabs.com> (https://digilar.se)",
+  "contributors": [
+    "Johannes Millegard <johannes@digilar.se>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.2",
