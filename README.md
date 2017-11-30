@@ -1,6 +1,7 @@
 # DOTENV-URL
 
-Dotenv-url is a module that loads environment variables from a .env file into process.env. The .env file can loaded from the filesystem or a url. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
+Dotenv-url is a module that loads environment variables from a .env files into process.env. The .env files can loaded from the filesystem or urls. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
+
 
 ## Usage
 
@@ -34,7 +35,7 @@ db.connect({
 ```
 ## Advanced usage 
 
-Use the options object to configure dotenv-url to load environment variables from a non-default location and/or specify encoding.
+Use the options object to configure dotenv-url to load environment variables from non-default locations and/or specify encoding.
 
 ### Load from file
 
@@ -45,7 +46,13 @@ require('dotenv-url').config({path: 'some-directory/.env', encoding: 'utf8'})
 ### Load from URL
 
 ```javascript
-require('dotenv-url').config({path: 'https://example.com/test/test.env', encoding: 'utf8'})
+require('dotenv-url').config({path: 'https://some-host.com/.env', encoding: 'utf8'})
+```
+
+### Load from multiple files or URLs
+
+```javascript
+require('dotenv-url').config({path: ['some-directory/.env', 'https://some-host.com/.env'], encoding: 'utf8'})
 ```
 
 

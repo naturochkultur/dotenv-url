@@ -1,7 +1,7 @@
 {
   "name": "@digilar/dotenv-url",
-  "version": "0.0.1",
-  "description": "Loads environment variables from a url. e.g. http://somehost.com/env/dev.env",
+  "version": "0.0.2",
+  "description": "Loads environment variables from one or more urls or files.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
