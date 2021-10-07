@@ -1,6 +1,6 @@
 'use strict'
 
-var request = require('request').defaults({ encoding: null })
+const fetch = require('node-fetch')
 var dotenv = require('dotenv')
 var fs = require('fs')
 var isUrl = require('is-url')
@@ -39,11 +39,8 @@ module.exports = {
       var src
 
       if (isUrl(path)) {
-        request.get({url: path, encoding: encoding }, function (err, res, body) {
-         if (err) {
-           throw err
-         }
-         src = body
+        fetch(path).then((body) => {
+          src = body
         })
 
         while(src === undefined) {
