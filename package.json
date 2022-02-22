@@ -1,6 +1,6 @@
 {
   "name": "@digilar/dotenv-url",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Loads environment variables from one or more urls or files.",
   "main": "index.js",
   "scripts": {
