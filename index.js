@@ -39,9 +39,13 @@ module.exports = {
       var src
 
       if (isUrl(path)) {
-        fetch(path).then((body) => {
-          src = body
-        })
+        async function get() {
+          const response = await fetch(path);
+          const body = await response.text();
+          src = body;
+        }
+
+        get();
 
         while(src === undefined) {
           deasync.runLoopOnce()

@@ -39,7 +39,7 @@ describe('#config({path: \'.env\'})', function() {
 
 describe('#config({path: \'http://host.com/file.env\'})', function() {
 
-  var cfg = {path: 'https://raw.githubusercontent.com/digilar/dotenv-url/master/test/.env', encoding: 'utf8'}
+  var cfg = {path: 'https://raw.githubusercontent.com/naturochkultur/dotenv-url/master/test/.env', encoding: 'utf8'}
 
   it('should return the parsed object', function() {
     var result = i.config(cfg)
@@ -76,7 +76,13 @@ describe('#config({path: [\'one.env\', \'two.env\']})', function() {
 
 describe('#config({path: [\'http://host.com/file1.env\', \'http://host.com/file2.env\']})', function() {
 
-  var cfg = {path: ['https://raw.githubusercontent.com/digilar/dotenv-url/master/test/one.env', 'https://raw.githubusercontent.com/digilar/dotenv-url/master/test/two.env'], encoding: 'utf8'}
+  var cfg = {
+    path: [
+      'https://raw.githubusercontent.com/naturochkultur/dotenv-url/master/test/one.env',
+      'https://raw.githubusercontent.com/naturochkultur/dotenv-url/master/test/two.env'
+    ],
+    encoding: 'utf8'
+  }
 
   it('should return the parsed object', function() {
     var result = i.config(cfg)
