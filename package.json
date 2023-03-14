@@ -1,6 +1,6 @@
 {
   "name": "@digilar/dotenv-url",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Loads environment variables from one or more urls or files.",
   "main": "index.js",
   "scripts": {
@@ -24,14 +24,14 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^9.1.2"
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
   },
   "dependencies": {
-    "deasync": "^0.1.23",
-    "dotenv": "^10.0.0",
+    "deasync": "^0.1.28",
+    "dotenv": "^16.0.3",
     "is-url": "^1.2.4",
-    "node-fetch": "^2.6.5"
+    "node-fetch": "^2.6.9"
   },
   "engines": {
     "node": ">=4.6.0"
